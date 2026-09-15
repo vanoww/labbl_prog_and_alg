@@ -11,16 +11,12 @@ int main() {
 	std::cin >> first_ch;
 	if (std::cin.fail()) {
 		std::cout << "вы ввели не число!\n";
-		std::cin.clear();
-		std::cin.ignore(10000, '\n');
 		return 1;
 	}
 	std::cout << "Введите второе число\n";
 	std::cin >> second_ch;
 	if (std::cin.fail()) {
 		std::cout << "вы ввели не число!\n";
-		std::cin.clear();
-		std::cin.ignore(10000, '\n');
 		return 1;
 	}
 	sred = (first_ch + second_ch) / 2;
